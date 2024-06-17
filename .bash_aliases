@@ -11,15 +11,19 @@ alias ssp='searchsploit $1'
 alias blue='sudo service bluetooth restart'
 alias uz='unzip $1'
 alias listen='nc -lnvp $1'
-# VPNs
-alias vpn='sudo openvpn ~/Downloads/vpns/competitive2_tr3n.ovpn'
-alias fortvpn='sudo openvpn ~/Downloads/vpns/vip/3fortresses_amanhaileg.ovpn'
 
-# Toolkit
+
+
+
+# Toolkit:
+
 alias msf='msfconsole -q'
 alias nmapz='sudo nmap -sC -sV --min-rate 5000 -p- $1 -oG nmap -v'
 alias gobusterz='gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -t 60 -q  -u $1'
 alias topscan='nmap $1 -p$(cat ~/topports.txt)'
+
+
+# Rev/Pwn tools:
 
 alias analyse='python ~/auto_ghidra.py -t $1'
 alias check='pwn checksec --file $1'
