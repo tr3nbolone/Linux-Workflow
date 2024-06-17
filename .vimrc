@@ -1,4 +1,9 @@
+
 set number
 syntax on
-inoremap {{ {<Enter><Enter>}<Up><Tab>
 
+set autoindent
+set smartindent
+
+
+inoremap {{ {<Enter><Enter>}<Up><Tab>
